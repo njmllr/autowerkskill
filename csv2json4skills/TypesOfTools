@@ -1,0 +1,44 @@
+
+["value": 
+    "synonyms": ["Drehmeißel","Bohrstange"]
+]
+
+["value": 
+    "synonyms": ["Gewindedrehmeißel", "Gewindestrehler", "Gewindeschneideisen", "Schneidkluppen"]
+]
+
+["value": 
+    "synonyms": ["Walzenfräser","Umfangsfräser"]
+]
+
+["value": "Messerköpfe",
+    "synonyms": ["Messerköpfe", "Stirnfräser", "Fräsköpfe",  "Planfräser", "Eckfräser"]
+]
+
+["value": "Scheibenfräser",
+    "synonyms": ["Trennfräser"]
+]
+
+["value": "Spiralbohrer",
+    "synonyms": ["Wendelbohrer", "Wendelnutenbohrer"]
+]
+
+["value": "Wendeplattenbohrer",
+    "synonyms": ["Bohrer mit Wendeschneidplatten"]
+]
+
+["value": "Zentrierbohrer",
+    "synonyms": ["Anbohrer"]
+]
+
+["value": "Ejektorbohrer",
+    "synonyms": ["Tieflochbohrer", "Teifbohrer"]
+]
+
+["value": "Schälbohrer",
+    "synonyms": ["Stufenbohrer"]
+]
+
+["value": "Spiralsenker",
+    "synonyms": ["Aufbohrer", "Senkbohrer"]
+]

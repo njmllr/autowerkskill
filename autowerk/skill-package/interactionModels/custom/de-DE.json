@@ -1,0 +1,1810 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "auto werk",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreateToolDemandIntent",
+                    "slots": [
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "samples": [
+                                "ich will einen {werkzeugtyp} {durchmesser} Millimeter",
+                                "{werkzeugtyp} {durchmesser} Millimeter {maschine}",
+                                "{werkzeugtyp}",
+                                "{maschine} {werkzeugtyp} mit {durchmesser} Durchmesser",
+                                "{werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an {maschine}",
+                                "{werkzeugtyp} mit {durchmesser} Millimeter an {maschine}",
+                                "{werkzeugtyp} anfordern",
+                                "Ich brauche {werkzeugtyp}  {durchmesser} an {maschine}  {sollStartzeit} ",
+                                "Ich will einen {werkzeugtyp} mit {durchmesser} Millimeter",
+                                "Ich brauche einen {werkzeugtyp}",
+                                "{werkzeugtyp} {durchmesser}"
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "ich brauche einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an der {maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimter zur {maschine}",
+                                "{werkzeugtyp} {durchmesser} an {maschine}",
+                                "bring einen {durchmesser} {werkzeugtyp}",
+                                "bring mir einen {durchmesser} Millimeter {werkzeugtyp} zur {maschine}",
+                                "ich brauche einen {durchmesser} Millimeter {werkzeugtyp} an {maschine}",
+                                "Ich will einen {durchmesser} {werkzeugtyp}",
+                                "{durchmesser} Millimter Durchmesser",
+                                "An {maschine} einen {werkzeugtyp} mit {durchmesser} Millimeter",
+                                "{werkzeugtyp} {durchmesser} Millimeter {maschine}",
+                                "{werkzeugtyp} mit {durchmesser} Millimter an {maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimeter",
+                                "{durchmesser} Millimeter",
+                                "Ich brauche {werkzeugtyp} {durchmesser}",
+                                "Ich will {durchmesser}",
+                                "{durchmesser}"
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "samples": [
+                                "ich brauche einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an der {maschine}",
+                                "bestelle ein {werkzeugtyp} mit {durchmesser} Millimeter an {maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                                "ich brauche es an der {maschine}",
+                                "bring das Werkzeug zur {maschine}",
+                                "Bring den {werkzeugtyp} an die {maschine}",
+                                "Ich brauche den {werkzeugtyp} an de {maschine}",
+                                "Ich bin an {maschine}",
+                                "An {maschine}",
+                                "{maschine}"
+                            ]
+                        },
+                        {
+                            "name": "sollStartzeit",
+                            "type": "AMAZON.TIME",
+                            "samples": [
+                                "ich brauche es {sollDatum} um {sollStartzeit} Uhr",
+                                "ich brauch es am {sollDatum} um {sollStartzeit} Uhr",
+                                "{sollDatum} um {sollStartzeit} Uhr",
+                                "ich will den {werkzeugtyp} am {sollDatum} um {sollStartzeit} Uhr",
+                                "am {sollDatum} um {sollStartzeit} Uhr",
+                                "{sollDatum} um {sollStartzeit}",
+                                "ich brauche das {werkzeugtyp} doch schon um {sollStartzeit} Uhr",
+                                "ich brauche das {werkzeugtyp} doch schon {sollStartzeit} ",
+                                "ich will den {werkzeugtyp} um {sollStartzeit} haben",
+                                "ich brauche einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an  {maschine} um {sollStartzeit}",
+                                "ich will einen {werkzeugtyp} mit {durchmesser} Millimeter zur {maschine} um {sollStartzeit} Uhr",
+                                "Ich brauche einen {werkzeugtyp} mit dem Durchmesser von {durchmesser} Millimeter an der {maschine} um {sollStartzeit} Uhr",
+                                "ich brauche das Werkzeug {sollStartzeit} ",
+                                "{sollStartzeit} Uhr",
+                                "Ich brauche den {werkzeugtyp} um {sollStartzeit} Uhr an {maschine}",
+                                "Um {sollStartzeit} am {sollDatum}",
+                                "Ich brauche das Werkzeug um {sollStartzeit}",
+                                "{sollStartzeit}"
+                            ]
+                        },
+                        {
+                            "name": "grund",
+                            "type": "DemandReason",
+                            "samples": [
+                                "ne",
+                                "der {werkzeugtyp} ist {grund}",
+                                "weil {grund}",
+                                "ich weiß nicht",
+                                "nein",
+                                "{grund}"
+                            ]
+                        },
+                        {
+                            "name": "fertigungsschritt",
+                            "type": "ManufactureSteps",
+                            "samples": [
+                                "Fertigungsauftrag {fertigungsauftrag} zum {fertigungsschritt}",
+                                "{fertigungsauftrag} {fertigungsschritt}",
+                                "{fertigungsauftrag} zum {fertigungsschritt}",
+                                "Fertigungsauftrag ist {fertigungsauftrag} zum {fertigungsschritt}",
+                                "Ich brauche den {werkzeugtyp} zum Fertigungsschritt {fertigungsschritt}",
+                                "Ich brauche das Werkzeug zum {fertigungsschritt}",
+                                "{fertigungsschritt}",
+                                "Leider nicht",
+                                "Nein",
+                                "Ne"
+                            ]
+                        },
+                        {
+                            "name": "sollDatum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "fertigungsauftrag",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "ich will an {maschine} einen {werkzeugtyp} mit {durchmesser} Millimeter für den Fertigungsauftrag {fertigungsauftrag} bestellen",
+                        "Ich brauche für den Fertigungsauftrag {fertigungsauftrag} einen neuen {werkzeugtyp}",
+                        "mein {grund}",
+                        "ich brauche einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an der {maschine} um {sollStartzeit} Uhr weil das {grund}",
+                        "{werkzeugtyp} an {maschine} um {sollStartzeit} Uhr",
+                        "bring mir ein neues Werkzeug an {maschine}",
+                        "ich brauche einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an der {maschine}",
+                        "bestelle einen {werkzeugtyp} an {maschine}",
+                        "ich will ein neues Werkzeug für {maschine}",
+                        "ich brauche {sollDatum} um {sollStartzeit} einen neuen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an {maschine}",
+                        "ich brauche ein Werkzeug an der {maschine}",
+                        "bestelle einen {werkzeugtyp} an die {maschine}",
+                        "ich will an {maschine} einen {werkzeugtyp} mit {durchmesser} Millimeter bestellen",
+                        "ich brauche einen {werkzeugtyp} an {maschine}",
+                        "wie ich ein neues Werkzeug bestellen kann",
+                        "wie bekomme ich ein Werkzeug",
+                        "{grund} ich brauche ein neues Werkzeug",
+                        "{grund} ich brauche einen neuen {werkzeugtyp}",
+                        "Ich brauche für Fertigungsschritt {fertigungsschritt} einen neuen {werkzeugtyp}",
+                        "ich brauche für Fertigungsschritt {fertigungsschritt} ein neues Werkzeug weil {grund}",
+                        "bestelle {durchmesser} Millimeter {werkzeugtyp}",
+                        "bestelle {werkzeugtyp}",
+                        "ich brauche einen neuen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser.",
+                        "ich brauche ein neues Werkzeug",
+                        "Werkzeug anfordern",
+                        "{werkzeugtyp} bestellen",
+                        "{durchmesser} Millimeter {werkzeugtyp} anfordern",
+                        "ich brauche ein {werkzeugtyp}",
+                        "Ich will ein Werkzeug bestellen.",
+                        "Ich will einen {werkzeugtyp} anfordern",
+                        "Ich brauche einen neuen {werkzeugtyp} weil {grund}",
+                        "Ich möchte einen {werkzeugtyp} für den {fertigungsschritt} bestellen",
+                        "bestelle {werkzeugtyp} mit dem Durchmesser {durchmesser} Millimeter um {sollStartzeit} für den {sollDatum} an die {maschine}",
+                        "Wie kann ich ein Werkzeug ordern",
+                        "{werkzeugtyp} {durchmesser} {sollStartzeit} anfordern",
+                        "Ich brauche einen {werkzeugtyp} {durchmesser} an {maschine}",
+                        "Ich möchte einen {werkzeugtyp} bestellen",
+                        "Wie kann ich Werkzeug bestellen"
+                    ]
+                },
+                {
+                    "name": "FirstInformationIntent",
+                    "slots": [],
+                    "samples": [
+                        "wie kann ich Informationen abfragen",
+                        "wie erhalte ich Informationen zu einem Werkzeugtransport",
+                        "Wie kann ich einen Werkzeugbedarf abfragen",
+                        "Wier erhalte ich Informationen zu einem Transportauftrag",
+                        "sag mir etwas zu einem Auftrag",
+                        "gibt mir Informationen zu einem Auftrag",
+                        "Wie erfahre ich etwas zu einem Auftrag",
+                        "Wie kann ich Informationen abrufen"
+                    ]
+                },
+                {
+                    "name": "ReadArrivelTimeIntent",
+                    "slots": [
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "samples": [
+                                "{werkzeugtyp} an {maschine}",
+                                "{werkzeugtyp} mit {durchmesser} Millimeter Druchmesser",
+                                "{werkzeugtyp} mit {durchmesser} Millimeter",
+                                "der Auftrag beinhaltet einen {werkzeugtyp}  {durchmesser} Millimeter Durchmesser an {maschine}",
+                                "{werkzeugtyp} {durchmesser} {maschine}",
+                                "{werkzeugtyp}"
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{durchmesser} Millimeter Durchmesser an {maschine}",
+                                "{durchmesser} Millimeter Durchmesser",
+                                "{durchmesser} Millimeter",
+                                "{durchmesser}"
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "samples": [
+                                "Der {werkzeugtyp} soll an die {maschine} geliefert werden",
+                                "Der {werkzeugtyp} soll an die {maschine} ",
+                                "Das Werkzeug soll an die {maschine} geliefert werden",
+                                "An {maschine}",
+                                "{maschine}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Wann kommt der {werkzeugtyp} an",
+                        "wann kommt der {werkzeugtyp} mit dem Durchmesser {durchmesser} Millimeter an die {maschine}",
+                        "wann kommt der {werkzeugtyp} an die {maschine}",
+                        "Wann kommt das Werkzeug endlich",
+                        "Wann kommt das Werkzeug an die {maschine}",
+                        "Wann kommt der {werkzeugtyp}",
+                        "Wann kommt der {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an {maschine}",
+                        "Wann kommt der {werkzeugtyp} mit dem Durchmesser {durchmesser} an die {maschine} an"
+                    ]
+                },
+                {
+                    "name": "ReadTransportDemandIntent",
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{werkzeugtyp} mit {durchmesser} Millimetern an {maschine}",
+                                "Ich hab die Angaben {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                                "{transportauftrag}",
+                                "die ID ist {transportauftrag}"
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools"
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines"
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "vonZeit",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "bisZeit",
+                            "type": "AMAZON.TIME"
+                        },
+                        {
+                            "name": "vonDatum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "bisDatum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "datum",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "ich suche die Transportaufträge mit dem {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                        "ich suche die  Aufträge mit dem {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                        "Gib mir die Transportaufträge von {vonDatum} {vonZeit} bis {bisZeit}",
+                        "Gib mir die Transportaufträge von {vonDatum} {vonZeit} bis {bisDatum}",
+                        "Gib mir die Transportaufträge von {vonDatum} bis {bisDatum}",
+                        "ich will die Aufträge vom {datum}",
+                        "Gib mir die Aufträge von {datum}  und {datum}",
+                        "Gib mir die Aufträge von {vonDatum} bis {bisDatum}",
+                        "Gib mir die Transportaufträge von {vonZeit} bis {bisZeit} Uhr",
+                        "Ich will die Aufträge von {vonZeit} bis {bisZeit}",
+                        "Ich will die Aufträge von {vonDatum} bis {bisDatum}",
+                        "gib mir Infos zu den Aufrrägen von {datum}",
+                        "ich will infos zu den Aufträgen von {datum}",
+                        "ich will informationen von {datum}",
+                        "Ich will Informationen von {vonZeit} bis {bisZeit}",
+                        "ich brauche Informationen von {vonDatum} bis {bisDatum}",
+                        "Ich will Informationen zu den Aufrägen von {vonDatum} {vonZeit} bis {bisDatum} {bisZeit}",
+                        "Informationen zu den Transportaufträgen von {vonDatum} {vonZeit} bis {bisDatum} {bisZeit}",
+                        "Infos zu den Aufrägen vom {vonDatum} {vonZeit} bis {bisDatum} {bisZeit}",
+                        "Gib mir Informationen zu den Aufrägen vom {vonDatum} bis {bisDatum}",
+                        "Gib mit Informationen zu den Transportaufträgen von {vonZeit} bis {bisZeit}",
+                        "Gib mir Informationen zu einem Transportauftrag",
+                        "Ich möchte Informationen zu einem Auftrag",
+                        "Ich möchte Informationen zum Transportauftrag",
+                        "Gib mir Informationen zum Auftrag {transportauftrag} mit {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                        "ich will informationen zum Auftrag mit dem {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                        "ich will informationen zum auftrag {transportauftrag}",
+                        "Ich möchte wissen welches Werkzeug im Transportauftrag {transportauftrag} ist",
+                        "welches werkzeug ist im Auftrag {transportauftrag}",
+                        "Welches Werkzeug beinhaltet der Transportauftrag {transportauftrag}",
+                        "Was beinhaltet der Transportauftrag {transportauftrag}",
+                        "Welches Werkzeug ist in {transportauftrag}",
+                        "was ist in {transportauftrag}",
+                        "was beinhaltet auftrag {transportauftrag}",
+                        "ich will infos zum auftrag {transportauftrag}",
+                        "ich will informationen zum transportauftrag {transportauftrag}",
+                        "{transportauftrag}",
+                        "ich möchte infos zu dem Transporauftrag {transportauftrag}",
+                        "Ich möchte alle Informationen zu {transportauftrag}",
+                        "Ich möchte Informationen zum Transportauftrag {transportauftrag}"
+                    ]
+                },
+                {
+                    "name": "ReadArrivalTimeTDemandIntent",
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "{werkzeugtyp} mit {durchmesser} Millimeter Durchmesser",
+                                "{werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an {maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                                "die ID ist {transportauftrag}",
+                                "der Auftrag beinhaltet einen {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser an {maschine}",
+                                "{werkzeugtyp}",
+                                "{werkzeugtyp} {durchmesser} und {maschine}",
+                                "das Werkzeug kommmt an {maschine} ",
+                                "{transportauftrag}"
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools"
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines"
+                        }
+                    ],
+                    "samples": [
+                        "wann kommt der transportauftrag {transportauftrag} mit  {durchmesser} millimeter Durchmesser  {maschine} ",
+                        "wann kommt der transportauftrag {transportauftrag} mit  {durchmesser} millimeter  {maschine} an",
+                        "Wann kommt der Transportauftrag",
+                        "Wann kommt der Auftrag",
+                        "wann kommt {transportauftrag}",
+                        "wann kommt der transportauftrag {transportauftrag}",
+                        "Wann kommt der {werkzeugtyp} mit dem Auftrag {transportauftrag}",
+                        "Wann kommt der {werkzeugtyp} mit {durchmesser} Durchmesser an {maschine}  mit dem Transportauftrag {transportauftrag}",
+                        "wann kommt das Werkzeug mit dem Auftrag {transportauftrag}",
+                        "wann kommt transportauftrag {transportauftrag}",
+                        "wo bleibt der Auftrag {transportauftrag}",
+                        "Wann kommt der Auftrag {transportauftrag}",
+                        "Wann kommt der Transportauftrag an"
+                    ]
+                },
+                {
+                    "name": "DeleteDemandIntent",
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "an {maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimeter löschen",
+                                "der Auftrag beinhaltet einen  {werkzeugtyp}  mit  {durchmesser}  Millimeter Durchmesser an  {maschine}  um  {sollZeit}  uhr für den Fertigungsauftrag  {fertigungsauftrag}  ",
+                                "Ich habe nur die Angaben {werkzeugtyp} {durchmesser} Millimeter an  {maschine}",
+                                "{maschine}",
+                                "{werkzeugtyp} {durchmesser} Millimeter",
+                                "{werkzeugtyp} {durchmesser} Millimeter {maschine}",
+                                "Ich habe nur die Angaben {werkzeugtyp} {durchmesser} Millimeter an  {maschine} ",
+                                "Ich habe nur die Angaben {werkzeugtyp} {durchmesser} Millimeter an  {maschine} für Auftrag {fertigungsauftrag}",
+                                "Ich habe nur die Angaben {werkzeugtyp} {durchmesser} Millimeter an {maschine} um {sollZeit}",
+                                "Transportauftrag {transportauftrag}",
+                                "Die ID ist {transportauftrag}",
+                                "{transportauftrag}"
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools"
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines"
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "fertigungsauftrag",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "sollDatum",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "sollZeit",
+                            "type": "AMAZON.TIME"
+                        }
+                    ],
+                    "samples": [
+                        "{werkzeugtyp} an {maschine} löschen",
+                        "{werkzeugtyp} {durchmesser} Millimeter löschen",
+                        "Ich will den Auftrag mit den Angaben {werkzeugtyp} {durchmesser} Millimeter an {maschine}  mit dem Fertigungsauftrag {fertigungsauftrag} löschen",
+                        "Ich will den Auftrag mit den Angaben {werkzeugtyp} {durchmesser} Millimeter an {maschine} um {sollZeit} Uhr löschen",
+                        "Ich will den Auftrag mit den Angaben {werkzeugtyp} {durchmesser} Millimeter an {maschine} um {sollZeit} Uhr mit dem Fertigungsauftrag {fertigungsauftrag} löschen",
+                        "ich möchte einen Transportauftrag löschen",
+                        "ich möchte eine Bestellung löschen",
+                        "ich will den Auftrag mit {werkzeugtyp} {durchmesser} Millimeter Durchmesser an {maschine} für den Fertigungsauftrag {fertigungsauftrag} um {sollZeit} Uhr am {sollDatum}",
+                        "lösche den Auftrag mit {werkzeugtyp} {durchmesser} Millimeter an {maschine} für den Fertigungsauftrag {fertigungsauftrag} ",
+                        "ich will den Auftrag mit {werkzeugtyp} {durchmesser} Millimeter Durchmesser an {maschine} für den {fertigungsauftrag} löschen",
+                        "lösche den Auftrag mit {werkzeugtyp} {durchmesser} Millimeter an {maschine}",
+                        "wie kann ich einen Auftrag löschen",
+                        "Wie kann ich einen Transportauftrag löschen",
+                        "Wie kann ich einen Werkzeugbedarf löschen",
+                        "lösche Transportauftrag {transportauftrag}",
+                        "Ich will den Auftrag {transportauftrag} löschen",
+                        "Ich will den Transportauftrag {transportauftrag} löschen",
+                        "ich will einen Auftrag löschen",
+                        "ich will einen Transportauftrag löschen",
+                        "ich will eine Bestellung löschen"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TypesOfTools",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Schlitzfräser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Walzenfräser",
+                                "synonyms": [
+                                    "Walzenfräser",
+                                    "Umfangsfräser"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gewindeschneideisen",
+                                "synonyms": [
+                                    "Gewindedrehmeißel",
+                                    "Gewindestrehler",
+                                    "Gewindeschneideisen",
+                                    "Schneidkluppen"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Langlochfräser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wendeplattenfräser"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Trennfräser",
+                                "synonyms": [
+                                    "Scheibenfräser",
+                                    "Trennfräser"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Planfräser",
+                                "synonyms": [
+                                    "Messerkopf",
+                                    "Stirnfräser",
+                                    "Fräskopf",
+                                    "Planfräser",
+                                    "Eckfräser"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stirnfräser",
+                                "synonyms": [
+                                    "Messerkopf",
+                                    "Stirnfräser",
+                                    "Fräskopf",
+                                    "Planfräser",
+                                    "Eckfräser"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fräskopf",
+                                "synonyms": [
+                                    "Messerkopf",
+                                    "Stirnfräser",
+                                    "Fräskopf",
+                                    "Planfräser",
+                                    "Eckfräser"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wendeplattenbohrer",
+                                "synonyms": [
+                                    "Wendeplattenbohrer",
+                                    "Bohrer mit Wendeschneidplatten"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Spiralsenker",
+                                "synonyms": [
+                                    "Spiralsenker",
+                                    "Aufbohrer",
+                                    "Senkbohrer"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zentrierbohrer",
+                                "synonyms": [
+                                    "Zentrierbohrer",
+                                    "Anbohrer"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BTA-Bohrer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ejektorbohrer",
+                                "synonyms": [
+                                    "Ejektorbohrer",
+                                    "Tieflochbohrer",
+                                    "Teifbohrer"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ausspindler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gewindebohrer",
+                                "synonyms": [
+                                    "Gewindeschneidbohrer",
+                                    "Gewindebohrer",
+                                    "Schraubbohrer",
+                                    "Mutterbohrer"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kegelsenker",
+                                "synonyms": [
+                                    "Kegelsenker",
+                                    "Senker"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maschinenreibahle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kegelreibahle",
+                                "synonyms": [
+                                    "Kegelreibahle",
+                                    "Räumahle"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Profildrehmeißel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "InitialLifetime",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "150"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "200"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "250"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "XPos",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "10"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "30"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "40"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "YPos",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "40"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "30"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "50"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Storages",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Werkzeugregal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Werkzeugwagen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Werkzeugschrank"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tischaufsatzgestell"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Recycle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Magazinschrank"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Robin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DemandReason",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Fertigungsauftrag hat sich geändert",
+                                "synonyms": [
+                                    "geänderter Fertigungsauftrag",
+                                    "Geänderter Auftrag"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "falsches Werkzeug",
+                                "synonyms": [
+                                    "Werkzeug falsch geliefert",
+                                    "falsches Werkzeug geliefert"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Werkzeugbruch ",
+                                "synonyms": [
+                                    "Werkzeug ist gebrochen",
+                                    "{werkzeugtyp} ist kaputt"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Machines",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Universalfräsmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNC-Fräsmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNC-Universaldrehmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNC-Drehmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "EinspindelDrehautomaten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Revolverdrehmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vertikaldrehmaschine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nachformdrehmaschine "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ManufactureSteps",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Langloch/Tasche fräsen komplett"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Passfedernut fräsen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Entgraten und scharfe Kanten brechen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Drehen Aussenkontur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Zentrieren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aussenkontur schruppen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aussenkontur schlichten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Planfräsen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ansenken Gewinde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gewinde schneiden"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gewindeloch bohren",
+                                "synonyms": [
+                                    "Gewinde bohren"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Welle komplett drehen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Auf Maß drehen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nein"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TypesOfHandle",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "HSK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VDI"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CreateToolDemandIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.829312761885"
+                    },
+                    "slots": [
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.591416766036.1381817747635"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1210444061944.339961717078.334966977108"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.829312761885.902460026329"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.1210444061944.248683585642.1345285855562",
+                                    "value": "0.5"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.829312761885.1129431042133"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1210444061944.419527681942.829633230245"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sollStartzeit",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.829312761885.257761944710"
+                            }
+                        },
+                        {
+                            "name": "grund",
+                            "type": "DemandReason",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1446101791163.1013891622535"
+                            }
+                        },
+                        {
+                            "name": "fertigungsschritt",
+                            "type": "ManufactureSteps",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1446101791163.1209104784707"
+                            }
+                        },
+                        {
+                            "name": "sollDatum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "fertigungsauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "isLessThan",
+                                    "prompt": "Slot.Validation.1261010364124.749817936559.851613138147",
+                                    "value": "600000"
+                                },
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.1261010364124.749817936559.733110562479",
+                                    "value": "500000"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "FirstInformationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": []
+                },
+                {
+                    "name": "ReadArrivelTimeIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.1462138687788"
+                    },
+                    "slots": [
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.693742081973.578468838293"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.693742081973.578468838293.92595580034"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.693742081973.1173300282040"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.496398786066.1335723058813.235191836786",
+                                    "value": "0.5"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.693742081973.287443888792"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.693742081973.287443888792.392410314184"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ReadTransportDemandIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1413696042854.898028732088"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.34512628594.297938425964.626747707301",
+                                    "value": "600000"
+                                },
+                                {
+                                    "type": "isLessThanOrEqualTo",
+                                    "prompt": "Slot.Validation.34512628594.297938425964.457241679224",
+                                    "value": "699999"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1580017707425.1200073234527.680149689128"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "vonZeit",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "bisZeit",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "vonDatum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "bisDatum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "datum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "ReadArrivalTimeTDemandIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.707680800233"
+                    },
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.166684578188.2500409273"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.111822424510.583611893890.613439801823",
+                                    "value": "600000"
+                                },
+                                {
+                                    "type": "isLessThan",
+                                    "prompt": "Slot.Validation.111822424510.583611893890.1311493445374",
+                                    "value": "700000"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1279559450304.47137530360.560753734292"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.1279559450304.649393788758.668557687712",
+                                    "value": "0.5"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1279559450304.1368447294703.1364350171043"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "DeleteDemandIntent",
+                    "delegationStrategy": "SKILL_RESPONSE",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.861596858262"
+                    },
+                    "slots": [
+                        {
+                            "name": "transportauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1300578210728.1538977343858"
+                            },
+                            "validations": [
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.333765752020.1285908249141.459020211943",
+                                    "value": "600000"
+                                },
+                                {
+                                    "type": "isLessThan",
+                                    "prompt": "Slot.Validation.333765752020.1285908249141.341300495875",
+                                    "value": "700000"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "werkzeugtyp",
+                            "type": "TypesOfTools",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.861596858262.1425137066315.1237284175621"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "maschine",
+                            "type": "Machines",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.861596858262.1138233745888.644624239237"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "durchmesser",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "fertigungsauftrag",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "isLessThan",
+                                    "prompt": "Slot.Validation.861596858262.801396437948.1212659965428",
+                                    "value": "600000"
+                                },
+                                {
+                                    "type": "isGreaterThanOrEqualTo",
+                                    "prompt": "Slot.Validation.861596858262.801396437948.668629105240",
+                                    "value": "500000"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "sollDatum",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "sollZeit",
+                            "type": "AMAZON.TIME",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.591416766036.1381817747635",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welches Werkzeug brauchst du an der {maschine} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Sag mir den Werkzeugtyp, Durchmesser, Maschine  und den Zeitpunkt wann du das Werkzeug brauchst?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Welches Werkzeug brauchst du?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Welchen Werkzeugtyp und Durchmesser benötigst du?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.829312761885.902460026329",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welchen Durchmesser benötigst du?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.829312761885.1129431042133",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "An welcher Maschine benötigst du das Werkzeug?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "An welcher Maschine benötigst du den {werkzeugtyp} mit {durchmesser} Millimeter Durchmesser?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.829312761885.257761944710",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Wann benötigst du den {werkzeugtyp} mit {durchmesser} Millimeter an der {maschine} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Wann benötigst du den {werkzeugtyp} an der {maschine} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Wann benötigtst du das Werkzeug?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.829312761885",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du den Werkzeugbedarf, welcher einen {werkzeugtyp} mit {durchmesser} Millimetern Durchmesser an {maschine} um {sollStartzeit} Uhr beinhaltet absenden?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du den Werkzeugbedarf, welcher einen {werkzeugtyp} mit dem Durchmesser von {durchmesser} Millimeter an {maschine}  am {sollDatum}  um {sollStartzeit} Uhr beinhaltet absenden?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1446101791163.1013891622535",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Gibt es einen Grund für deine Bestellung, wie z.B. Werkzeugbruch?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1446101791163.1209104784707",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Hast du Informationen zum Fertigungsschritt- ode Auftrag?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.191008471157.1212050108073",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Du benötigst die ID des Transportauftrags um Informationen darüber abzurufen. "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.540075779606.820625504716",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Du benötigst die ID des Transportauftrags um Informationen darüber zu erhalten"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.34512628594.297938425964.626747707301",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.34512628594.297938425964.457241679224",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID "
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.693742081973.1433269800356.907864223297",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.693742081973.1433269800356.811813329376",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.676431456102.664107843853.596889068126",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.676431456102.664107843853.421899039571",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.693742081973.578468838293.92595580034",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diesen Werkzeugtyp haben wir nicht im Unternehmen"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.693742081973.287443888792.392410314184",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diese Maschine gibt es nicht in unserer Fertigung"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.693742081973.578468838293",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Um den Transportauftrag eindeutig zuordnen zu können benötige ich Angaben zu Werkzeugtyp, Durchmesser und Maschine."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.693742081973.1173300282040",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Welchen Durchmesser hat der {werkzeugtyp} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.693742081973.287443888792",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "An welcher Maschine soll das {werkzeugtyp} ankommmen?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.167223409977.514589128417",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Um Informationen über einen Transportauftrag zu erhalten musst du mir die ID des Transportauftrags mitteilen"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.111822424510.583611893890.613439801823",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.111822424510.583611893890.1311493445374",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.111822424510.583611893890",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Ich benötige die ID des Transportauftrags. Falls du keine ID des Transportauftrags hast, benötige ich Angaben zum Werkzeugtyp, Durchmesser und der Maschine?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1210444061944.419527681942.829633230245",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diese Maschine gibt es nicht in unserer Fertigung"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1210444061944.248683585642.1345285855562",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die kleinste größe ist null komma fünf millimeter"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1210444061944.339961717078.334966977108",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Das Werkzeug gibt es nicht in unserem Unternehmen"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1279559450304.47137530360.560753734292",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Das Werkzeug haben wir nicht in unserem Unternehmen"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1279559450304.649393788758.668557687712",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die kleinste größe ist null komma fünf millimeter"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1279559450304.1368447294703.1364350171043",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die Maschine haben wir nicht in unserer Fertigung"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.496398786066.1335723058813.235191836786",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die kleinste größe ist null komma fünf millimeter"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.166684578188.2500409273",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Ich benötige die ID des Transportauftrags. Falls du keine ID des Transportauftrags hast, benötige ich Angaben zum Werkzeugtyp, Durchmesser und der Maschine?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1413696042854.898028732088",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du mehr Informationen zum {transportauftrag} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du mehr Informationen zum {werkzeugtyp} {durchmesser} Millimeter Durchmesser an {maschine} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Ich benötige die ID des Transportauftrags oder alle Angaben zum Werkzeugtyp, Durchmesser und der Maschine."
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1580017707425.1200073234527.680149689128",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diese Maschine haben wir nicht in der Fertigung"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.333765752020.1285908249141.459020211943",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.333765752020.1285908249141.341300495875",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Transportauftrags ist eine sechsstellige ID beginnend mit sechshunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.861596858262",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du den Transportauftrag {transportauftrag} löschen, welcher einen {werkzeugtyp} {durchmesser} Millimeter Durchmesser an {maschine} beinhaltet?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du den Transportauftrag {transportauftrag} löschen?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.861596858262.1425137066315.1237284175621",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diesen Werkzeugtyp haben wir nicht im Unternehmen"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.861596858262.1138233745888.644624239237",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diese Maschine haben wir nicht in unserer Fertigung"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.861596858262.1520959908830.1136101721360",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Dieser Fertigungsschritt ist mir nicht bekannt."
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.861596858262.801396437948.1212659965428",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Fertigungsschritts ist eine sechsstellige ID beginnend mit fünfhunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.861596858262.801396437948.668629105240",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Fertigungsschritts ist eine sechsstellige ID beginnend mit fünfhunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1261010364124.749817936559.851613138147",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Fertigungsschritts ist eine sechsstellige ID beginnend mit fünfhunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1261010364124.749817936559.733110562479",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Die ID des Fertigungsschritts ist eine sechsstellige ID beginnend mit fünfhunderttausend"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1300578210728.1538977343858",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Wenn du die ID des Transportauftrags hast kannst du den Auftrag direkt löschen. Ansonsten benötige ich mehrere Angaben. Ich benötige den Werkzeugtyp, Durchmesser und Maschine sowie die Ankunftszeit oder den zugehörigen Fertigungsauftrag."
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.1462138687788",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtest du noch mehr Informationen zu diesem Auftrag?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.707680800233",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Möchtst du noch mehr Informationen zu diesem Auftrag?"
+                    }
+                ]
+            }
+        ]
+    }
+}

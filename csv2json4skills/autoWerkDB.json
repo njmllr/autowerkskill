@@ -1,0 +1,540 @@
+[
+    {
+        "name": "﻿TypesOfToolsId",
+        "values": [
+            {
+                "name": {
+                    "value": 140001
+                }
+            },
+            {
+                "name": {
+                    "value": 140002
+                }
+            },
+            {
+                "name": {
+                    "value": 140003
+                }
+            }
+        ]
+    },
+    {
+        "name": "TypesOfTools",
+        "values": [
+            {
+                "name": {
+                    "value": "Schlitzfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Walzenfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Gewindeschneideisen"
+                }
+            },
+            {
+                "name": {
+                    "value": "Langlochfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Wendeplattenfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Trennfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Planfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Stirnfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Fräskopf"
+                }
+            },
+            {
+                "name": {
+                    "value": "Wendeplattenbohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "Spiralsenker"
+                }
+            },
+            {
+                "name": {
+                    "value": "Zentrierbohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "BTA-Bohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "Ejektorbohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "Ausspindler"
+                }
+            },
+            {
+                "name": {
+                    "value": "Gewindebohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "Kegelsenker"
+                }
+            },
+            {
+                "name": {
+                    "value": "Maschinenreibahle"
+                }
+            },
+            {
+                "name": {
+                    "value": "Kegelreibahle"
+                }
+            },
+            {
+                "name": {
+                    "value": "Profildrehmeißel"
+                }
+            }
+        ]
+    },
+    {
+        "name": "InitialLifetime",
+        "values": [
+            {
+                "name": {
+                    "value": 150
+                }
+            },
+            {
+                "name": {
+                    "value": 200
+                }
+            },
+            {
+                "name": {
+                    "value": 250
+                }
+            }
+        ]
+    },
+    {
+        "name": "UId",
+        "values": [
+            {
+                "name": {
+                    "value": "NULL"
+                }
+            }
+        ]
+    },
+    {
+        "name": "CreatedBy",
+        "values": [
+            {
+                "name": {
+                    "value": "Worker1"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker3"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker2"
+                }
+            }
+        ]
+    },
+    {
+        "name": "CreatedDate",
+        "values": [
+            {
+                "name": {
+                    "value": "2020-06-12 16:33:00"
+                }
+            },
+            {
+                "name": {
+                    "value": "2020-06-12 16:35:00"
+                }
+            }
+        ]
+    },
+    {
+        "name": "EditDate",
+        "values": [
+            {
+                "name": {
+                    "value": "NULL"
+                }
+            }
+        ]
+    },
+    {
+        "name": "﻿StoragesId",
+        "values": [
+            {
+                "name": {
+                    "value": 120001
+                }
+            },
+            {
+                "name": {
+                    "value": 120002
+                }
+            },
+            {
+                "name": {
+                    "value": 120003
+                }
+            }
+        ]
+    },
+    {
+        "name": "XPos",
+        "values": [
+            {
+                "name": {
+                    "value": 10
+                }
+            },
+            {
+                "name": {
+                    "value": 30
+                }
+            },
+            {
+                "name": {
+                    "value": 40
+                }
+            }
+        ]
+    },
+    {
+        "name": "YPos",
+        "values": [
+            {
+                "name": {
+                    "value": 40
+                }
+            },
+            {
+                "name": {
+                    "value": 30
+                }
+            },
+            {
+                "name": {
+                    "value": 50
+                }
+            }
+        ]
+    },
+    {
+        "name": "Storages",
+        "values": [
+            {
+                "name": {
+                    "value": "CNC-Fräsmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "CNC-Drehmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugregal"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugwagen"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugschrank"
+                }
+            },
+            {
+                "name": {
+                    "value": "Tischaufsatzgestell"
+                }
+            },
+            {
+                "name": {
+                    "value": "Recycle"
+                }
+            },
+            {
+                "name": {
+                    "value": "Magazinschrank"
+                }
+            },
+            {
+                "name": {
+                    "value": "Robin"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "UId",
+        "values": [
+            {
+                "name": {
+                    "value": "NULL"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "CreatedBy",
+        "values": [
+            {
+                "name": {
+                    "value": "Worker1"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker2"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker3"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker4"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker5"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker6"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker7"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "EditedBy",
+        "values": [
+            {
+                "name": {
+                    "value": "Worker1"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker3"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker2"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "CreatedDate",
+        "values": [
+            {
+                "name": {
+                    "value": "2020-06-16 10:16:00"
+                }
+            },
+            {
+                "name": {
+                    "value": "2020-06-16 10:18:00"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "EditDate",
+        "values": [
+            {
+                "name": {
+                    "value": "2020-04-04 10:34:00"
+                }
+            },
+            {
+                "name": {
+                    "value": "2020-04-04 13:34:00"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "﻿TypesOfHandleId",
+        "values": [
+            {
+                "name": {
+                    "value": 150001
+                }
+            },
+            {
+                "name": {
+                    "value": 150002
+                }
+            },
+            {
+                "name": {
+                    "value": 150003
+                }
+            }
+        ]
+    },
+    {
+        "name": "TypesOfHandle",
+        "values": [
+            {
+                "name": {
+                    "value": "HSK"
+                }
+            },
+            {
+                "name": {
+                    "value": "SK"
+                }
+            },
+            {
+                "name": {
+                    "value": "VDI"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "CreatedBy",
+        "values": [
+            {
+                "name": {
+                    "value": "Worker3"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker1"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "EditedBy",
+        "values": [
+            {
+                "name": {
+                    "value": "Worker3"
+                }
+            },
+            {
+                "name": {
+                    "value": "Worker1"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "CreatedDate",
+        "values": [
+            {
+                "name": {
+                    "value": "2020-06-12 16:33:00"
+                }
+            },
+            {
+                "name": {
+                    "value": "2020-06-12 16:35:00"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    },
+    {
+        "name": "EditDate",
+        "values": [
+            {
+                "name": {
+                    "value": "NULL"
+                }
+            },
+            {
+                "name": {}
+            }
+        ]
+    }
+]

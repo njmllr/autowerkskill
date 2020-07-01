@@ -1,0 +1,514 @@
+[
+    {
+        "name": "TypesOfToolsId",
+        "values": [
+            {
+                "name": {
+                    "value": 140001
+                }
+            },
+            {
+                "name": {
+                    "value": 140002
+                }
+            },
+            {
+                "name": {
+                    "value": 140003
+                }
+            }
+        ]
+    },
+    {
+        "name": "TypesOfTools",
+        "values": [
+            {
+                "name": {
+                    "value": "Schlitzfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Walzenfräser",
+                    "synonyms": [
+                        "Walzenfräser",
+                        "Umfangsfräser"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Gewindeschneideisen",
+                    "synonyms": [
+                        "Gewindedrehmeißel",
+                        "Gewindestrehler",
+                        "Gewindeschneideisen",
+                        "Schneidkluppen"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Langlochfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Wendeplattenfräser"
+                }
+            },
+            {
+                "name": {
+                    "value": "Trennfräser",
+                    "synonyms": [
+                        "Scheibenfräser",
+                        "Trennfräser"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Planfräser",
+                    "synonyms": [
+                        "Messerkopf",
+                        "Stirnfräser",
+                        "Fräskopf",
+                        "Planfräser",
+                        "Eckfräser"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Stirnfräser",
+                    "synonyms": [
+                        "Messerkopf",
+                        "Stirnfräser",
+                        "Fräskopf",
+                        "Planfräser",
+                        "Eckfräser"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Fräskopf",
+                    "synonyms": [
+                        "Messerkopf",
+                        "Stirnfräser",
+                        "Fräskopf",
+                        "Planfräser",
+                        "Eckfräser"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Wendeplattenbohrer",
+                    "synonyms": [
+                        "Wendeplattenbohrer",
+                        "Bohrer mit Wendeschneidplatten"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Spiralsenker",
+                    "synonyms": [
+                        "Spiralsenker",
+                        "Aufbohrer",
+                        "Senkbohrer"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Zentrierbohrer",
+                    "synonyms": [
+                        "Zentrierbohrer",
+                        "Anbohrer"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "BTA-Bohrer"
+                }
+            },
+            {
+                "name": {
+                    "value": "Ejektorbohrer",
+                    "synonyms": [
+                        "Ejektorbohrer",
+                        "Tieflochbohrer",
+                        "Teifbohrer"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Ausspindler"
+                }
+            },
+            {
+                "name": {
+                    "value": "Gewindebohrer",
+                    "synonyms": [
+                        "Gewindeschneidbohrer",
+                        "Gewindebohrer",
+                        "Schraubbohrer",
+                        "Mutterbohrer"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Kegelsenker",
+                    "synonyms": [
+                        "Kegelsenker",
+                        "Senker"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Maschinenreibahle"
+                }
+            },
+            {
+                "name": {
+                    "value": "Kegelreibahle",
+                    "synonyms": [
+                        "Kegelreibahle",
+                        "Räumahle"
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "value": "Profildrehmeißel"
+                }
+            }
+        ]
+    },
+    {
+        "name": "InitialLifetime",
+        "values": [
+            {
+                "name": {
+                    "value": 150
+                }
+            },
+            {
+                "name": {
+                    "value": 200
+                }
+            },
+            {
+                "name": {
+                    "value": 250
+                }
+            }
+        ]
+    },
+    {
+        "name": "StoragesId",
+        "values": [
+            {
+                "name": {
+                    "value": 120001
+                }
+            },
+            {
+                "name": {
+                    "value": 120002
+                }
+            },
+            {
+                "name": {
+                    "value": 120003
+                }
+            }
+        ]
+    },
+    {
+        "name": "XPos",
+        "values": [
+            {
+                "name": {
+                    "value": 10
+                }
+            },
+            {
+                "name": {
+                    "value": 30
+                }
+            },
+            {
+                "name": {
+                    "value": 40
+                }
+            }
+        ]
+    },
+    {
+        "name": "YPos",
+        "values": [
+            {
+                "name": {
+                    "value": 40
+                }
+            },
+            {
+                "name": {
+                    "value": 30
+                }
+            },
+            {
+                "name": {
+                    "value": 50
+                }
+            }
+        ]
+    },
+    {
+        "name": "Storages",
+        "values": [
+            {
+                "name": {
+                    "value": "CNC-Fräsmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "CNC-Drehmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugregal"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugwagen"
+                }
+            },
+            {
+                "name": {
+                    "value": "Werkzeugschrank"
+                }
+            },
+            {
+                "name": {
+                    "value": "Tischaufsatzgestell"
+                }
+            },
+            {
+                "name": {
+                    "value": "Recycle"
+                }
+            },
+            {
+                "name": {
+                    "value": "Magazinschrank"
+                }
+            },
+            {
+                "name": {
+                    "value": "Robin"
+                }
+            },
+            {
+                "name": {
+                    "value": "BAZ",
+                    "synonyms": [
+                        "Bearbeitungszentrum",
+                        "BAZ",
+                        "Fertigungszentrum"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "name": "userId",
+        "values": [
+            {
+                "name": {
+                    "value": "amzn1.ask.account.AHXPQA6224VCETLQP34BFKFERV6D73XARE35222UW4NXHRFBANNBHI4N35OMX6TZEROUJ2AWEIPBKTBGP4HNBI6V2SEZTD6DL2OKPBQ6GL5V4ADLWYI52PG3Q2D5K2SCYMUHQHVU6RTLZX2TJTACVL6Z2TJVLICYE7DT36IWEEPHK4AVHO2JKAFDU5EEEW4TUVTQ7OHPQY33XCI"
+                }
+            }
+        ]
+    },
+    {
+        "name": "TransportDemandsId",
+        "values": [
+            {
+                "name": {
+                    "value": 101025
+                }
+            },
+            {
+                "name": {
+                    "value": 117470
+                }
+            },
+            {
+                "name": {
+                    "value": 147253
+                }
+            }
+        ]
+    },
+    {
+        "name": "demandReason",
+        "values": [
+            {
+                "name": {
+                    "value": "werkzeugbruch"
+                }
+            },
+            {
+                "name": {
+                    "value": "falsches werkzeug"
+                }
+            },
+            {
+                "name": {
+                    "value": "nein"
+                }
+            },
+            {
+                "name": {
+                    "value": "bohrer ist gebrochen"
+                }
+            },
+            {
+                "name": {
+                    "value": "werkzeug ist gebrochen"
+                }
+            },
+            {
+                "name": {
+                    "value": "werkzeug gebrochen ist"
+                }
+            },
+            {
+                "name": {
+                    "value": "falsche bohrer geliefert"
+                }
+            }
+        ]
+    },
+    {
+        "name": "diameter",
+        "values": [
+            {
+                "name": {
+                    "value": 2.1
+                }
+            },
+            {
+                "name": {
+                    "value": 1
+                }
+            }
+        ]
+    },
+    {
+        "name": "machines",
+        "values": [
+            {
+                "name": {
+                    "value": "revolverdrehmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "cnc drehmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "cnc fräsmaschine"
+                }
+            },
+            {
+                "name": {
+                    "value": "cnc maschine"
+                }
+            }
+        ]
+    },
+    {
+        "name": "manufactureStep",
+        "values": [
+            {
+                "name": {
+                    "value": "walzlager bohren"
+                }
+            },
+            {
+                "name": {
+                    "value": "nein"
+                }
+            },
+            {
+                "name": {
+                    "value": "Nein"
+                }
+            },
+            {
+                "name": {
+                    "value": "borhen"
+                }
+            },
+            {
+                "name": {
+                    "value": "bohren"
+                }
+            }
+        ]
+    },
+    {
+        "name": "TypesOfHandleId",
+        "values": [
+            {
+                "name": {
+                    "value": 150001
+                }
+            },
+            {
+                "name": {
+                    "value": 150002
+                }
+            },
+            {
+                "name": {
+                    "value": 150003
+                }
+            }
+        ]
+    },
+    {
+        "name": "TypesOfHandle",
+        "values": [
+            {
+                "name": {
+                    "value": "HSK"
+                }
+            },
+            {
+                "name": {
+                    "value": "SK"
+                }
+            },
+            {
+                "name": {
+                    "value": "VDI"
+                }
+            }
+        ]
+    }
+]

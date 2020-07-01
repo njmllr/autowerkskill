@@ -1,0 +1,30 @@
+{
+  "askcliStatesVersion": "2020-03-31",
+  "profiles": {
+    "CLI-PROFILE-AutoWerk": {
+      "skillId": "amzn1.ask.skill.3276440f-c62d-4946-9134-99608dd59798",
+      "skillInfrastructure": {
+        "@ask-cli/lambda-deployer": {
+          "deployState": {
+            "default": {
+              "iamRole": "arn:aws:iam::875556054026:role/ask-lambda-AutoWerkSkill-1590661146696",
+              "lambda": {
+                "arn": "arn:aws:lambda:eu-central-1:875556054026:function:ask-autowerkskill-cli-profile-autowerk-default-1590661160893",
+                "lastModified": "2020-07-01T10:20:26.680+0000",
+                "revisionId": "cd4d68a8-5026-4d4d-8088-0ff2dd0961df"
+              }
+            }
+          }
+        }
+      },
+      "skillMetadata": {
+        "lastDeployHash": "dVIQF+keiZIrvtZdW7WTQNaYgMU="
+      },
+      "code": {
+        "default": {
+          "lastDeployHash": "VUSfpUoD9FCn1mwzWCU0O1EP5vc="
+        }
+      }
+    }
+  }
+}

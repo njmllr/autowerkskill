@@ -1,0 +1,30 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "de-DE": {
+          "summary": "Erfahre lustige und interessante Fakten über Auto Werk.",
+          "examplePhrases": [
+            "Alexa öffne auto werk"
+          ],
+          "keywords": [
+            "space",
+            "facts",
+            "trivia"
+          ],
+          "name": "AutoWerkSkill",
+          "description": "Um zu beginnen, sage einfach „Alexa, starte Auto Werk“ oder „Alexa, öffne Auto Werk“. Du kannst sie jederzeit unterbrechen, indem du „Alexa, stop“ sagst."
+        }
+      },
+      "category": "KNOWLEDGE_AND_TRIVIA"
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-central-1:875556054026:function:ask-autowerkskill-cli-profile-autowerk-default-1590661160893"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
